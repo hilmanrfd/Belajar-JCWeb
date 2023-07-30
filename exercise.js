@@ -6,3 +6,5 @@ var makan="durian";
 console.log(minum, makan);
 
 console.log(minum, makan, minum);
+
+console.log(minum, minum, minum);
