@@ -16,3 +16,22 @@ git add exercise.js
 git commit -m "third commit" //ini comment nama commit nya
 git branch -M main //mau di taro di branch mana
 git push -u origin main
+
+
+incase get this error when -git push origin main
+
+! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/hilmanrfd/Belajar-JCWeb.git' 
+hint: Updates were rejected because the remote contains work that you do
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+do this
+
+git fetch --all
+git pull origin main --allow-unrelated-helated-histories
+
+then
+
+git push origin main
