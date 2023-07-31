@@ -1,0 +1,18 @@
+git command first commit 
+
+echo "# Belajar-JCWeb" >> README.md
+git init
+git add exercise.js
+git commit -m "second commit"
+git branch -M main
+git remote add origin https://github.com/hilmanrfd/Belajar-JCWeb.git
+git push -u origin main
+
+second command 
+
+
+git init
+git add exercise.js
+git commit -m "third commit" //ini comment nama commit nya
+git branch -M main //mau di taro di branch mana
+git push -u origin main
