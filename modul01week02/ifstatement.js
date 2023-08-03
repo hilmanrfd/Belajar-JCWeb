@@ -10,7 +10,7 @@ console.log(Boolean(-1));
 if (age >= 17) {
   console.log("you already had ID Card");
 } else {
-  console.log("you are not had ID Card yet");
+  console.log("you can't get ID Card yet");
 }
 
 let grade = "a";
@@ -26,3 +26,6 @@ if (grade == "A") {
 } else {
   console.log("its Bad");
 }
+
+if (age >= 17) {
+  console.log("you already had ID Card"); } // will not print karena ini false

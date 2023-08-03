@@ -33,15 +33,23 @@ console.log("Perbedaan Tanggal")
 // perbedaan tanggal dan convert hari ke tahun, bulan, hari
 let date1 = new Date('2023-06-01');
 let date2 = new Date('2023-12-01');
-let perbedaanTanggal = Math.abs(date2 - date1) / (1000 * 60 * 60 * 24);
+let perbedaanTanggal = (date2 - date1) / (1000 * 60 * 60 * 24);
 console.log('Perbedaan Tanggal adalah ', perbedaanTanggal);
 
 console.log("Convert Hari")
 // convert hari ke tahun, bulan, hari
-let hari = 400;
-let tahun = Math.floor(hari / 365);
-let bulan = Math.floor((hari % 365) / 30);
-let hari2 = Math.floor((hari % 365) % 30);
+let day = 400; // <- soal yang mau di convert
+let year = 365;
+let month = 30;
 
-let convertTahun = hari + ' = ' + tahun + ' tahun ' + bulan + ' bulan ' + hari2 + ' hari ';
+let tahun = Math.floor(day / year);
+let bulan = Math.floor((day % year) / month);
+let hari = Math.floor((day % year) % month);
+
+let convertTahun = day + ' = ' + tahun + ' tahun ' + bulan + ' bulan ' + hari + ' hari ';
 console.log(convertTahun);
+
+/*let test = (day % year);
+
+console.log(test);
+*/
